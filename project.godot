@@ -8,26 +8,10 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Area2D",
-"class": "Card",
-"language": "GDScript",
-"path": "res://6RationalGrass/Draft/Card.gd"
-}, {
-"base": "Node2D",
-"class": "CardDeck",
-"language": "GDScript",
-"path": "res://6RationalGrass/Draft/CardDeck.gd"
-} ]
-_global_script_class_icons={
-"Card": "",
-"CardDeck": ""
-}
-
 [application]
 
 config/name="Cheng - Capstone Project"
-run/main_scene="res://5Prologue/PrologueScene.tscn"
+run/main_scene="res://1HomePage/HomePage.tscn"
 
 [display]
 

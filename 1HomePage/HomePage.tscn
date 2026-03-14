@@ -1,10 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://0Font/techFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://0Font/buttonFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://1HomePage/HomePageScript.gd" type="Script" id=3]
-[ext_resource path="res://Universal UI/Button/(Long)MainPageButtonUI.png" type="Texture" id=4]
-[ext_resource path="res://Universal UI/Button/(LongHover)MainPageButtonUI.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Flash"
@@ -126,10 +124,9 @@ __meta__ = {
 }
 
 [node name="StartGameButton" type="TextureButton" parent="ButtonContainer"]
+margin_top = 150.0
 margin_right = 805.0
-margin_bottom = 100.0
-texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 5 )
+margin_bottom = 150.0
 stretch_mode = 2
 
 [node name="StartGameText" type="RichTextLabel" parent="ButtonContainer/StartGameButton"]
@@ -154,11 +151,9 @@ __meta__ = {
 anims/Flash = SubResource( 1 )
 
 [node name="LoadGameButton" type="TextureButton" parent="ButtonContainer"]
-margin_top = 130.0
+margin_top = 180.0
 margin_right = 805.0
-margin_bottom = 230.0
-texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 5 )
+margin_bottom = 180.0
 stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
@@ -185,11 +180,9 @@ __meta__ = {
 anims/Flash = SubResource( 2 )
 
 [node name="GalleryButton" type="TextureButton" parent="ButtonContainer"]
-margin_top = 260.0
+margin_top = 210.0
 margin_right = 805.0
-margin_bottom = 360.0
-texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 5 )
+margin_bottom = 210.0
 stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
@@ -216,6 +209,7 @@ __meta__ = {
 anims/Flash = SubResource( 3 )
 
 [node name="Transition" type="ColorRect" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_left = -75.7937
 margin_top = -84.4126
@@ -231,6 +225,3 @@ __meta__ = {
 autoplay = "FadeOut"
 anims/FadeIn = SubResource( 4 )
 anims/FadeOut = SubResource( 5 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-autoplay = true

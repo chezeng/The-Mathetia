@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Universal UI/Dialogue/Main Character Back side.png" type="Texture" id=1]
+[ext_resource path="res://Universal UI/Rational Field/Background/RationalGrass.png" type="Texture" id=2]
+[ext_resource path="res://Universal UI/Card/FieldCard.png" type="Texture" id=3]
+[ext_resource path="res://Universal UI/Card/CardBack.png" type="Texture" id=4]
+[ext_resource path="res://6RationalGrass/CardDeck.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Flip"
+length = 0.2
+
+[node name="RationalGrass" type="Node2D"]
+
+[node name="RationalGrass" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.470588 )
+light_mask = 0
+position = Vector2( 798.586, 498.779 )
+scale = Vector2( 1, 1.01672 )
+texture = ExtResource( 2 )
+
+[node name="CardDeck" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="CardBack" type="Sprite" parent="CardDeck"]
+visible = false
+position = Vector2( 546.468, 345.847 )
+texture = ExtResource( 4 )
+
+[node name="FieldCard" type="Sprite" parent="CardDeck"]
+visible = false
+position = Vector2( 878.73, 349.553 )
+texture = ExtResource( 3 )
+
+[node name="FlipCardToFieldCard" type="AnimationPlayer" parent="CardDeck"]
+anims/Flip = SubResource( 1 )
+
+[node name="XBack" type="Sprite" parent="."]
+position = Vector2( 791.116, 796.568 )
+scale = Vector2( 0.787715, 0.800476 )
+texture = ExtResource( 1 )

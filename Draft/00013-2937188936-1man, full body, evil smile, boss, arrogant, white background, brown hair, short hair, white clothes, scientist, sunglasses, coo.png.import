@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/00013-2937188936-1man, full body, evil smile, boss, arrogant, white background, brown hair, short hair, white clothes, scientist, sunglasses, coo.png-4cd80800834a9edd75f2be29d1ab943f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Draft/00013-2937188936-1man, full body, evil smile, boss, arrogant, white background, brown hair, short hair, white clothes, scientist, sunglasses, coo.png"
+dest_files=[ "res://.import/00013-2937188936-1man, full body, evil smile, boss, arrogant, white background, brown hair, short hair, white clothes, scientist, sunglasses, coo.png-4cd80800834a9edd75f2be29d1ab943f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
